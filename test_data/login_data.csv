@@ -1,0 +1,8 @@
+username,password,expected_result,test_case
+tomsmith,SuperSecretPassword!,success,Valid credentials
+tomsmith,wrongpassword,error,Wrong password
+wronguser,SuperSecretPassword!,error,Wrong username
+,SuperSecretPassword!,error,Empty username
+tomsmith,,error,Empty password
+TOMSMITH,SuperSecretPassword!,error,Uppercase username
+tomsmith,supersecretpassword!,error,Lowercase password

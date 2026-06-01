@@ -1,4 +1,6 @@
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class LoginPage:
     URL = "https://the-internet.herokuapp.com/login"
@@ -25,11 +27,16 @@ class LoginPage:
         self.driver.find_element(*self.LOGIN_BUTTON).click()
 
     def get_success_message(self):
-        return self.driver.find_element(*self.SUCCESS_MSG).text
+        element = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(self.SUCCESS_MSG)
+        )
+        return element.text
 
     def get_error_message(self):
-        return self.driver.find_element(*self.ERROR_MSG).text
+        element = WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(self.ERROR_MSG)
+        )
+        return element.text
 
     def logout(self):
         self.driver.find_element(*self.LOGOUT_BUTTON).click()
-        
