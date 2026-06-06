@@ -1,0 +1,5 @@
+{
+  "tests/test_data_driven.py::TestDataDriven::test_login_data_driven[tomsmith--success-Empty password]": true,
+  "tests/test_data_driven.py::TestDataDriven::test_login_data_driven[TOMSMITH-SuperSecretPassword!-success-Uppercase username]": true,
+  "tests/test_data_driven.py::TestDataDriven::test_login_data_driven[tomsmith-supersecretpassword!-success-Lowercase password]": true
+}
