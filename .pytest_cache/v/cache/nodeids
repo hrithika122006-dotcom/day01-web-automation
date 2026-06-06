@@ -1,4 +1,8 @@
 [
+  "api_tests/test_mock_api.py::TestMockAPI::test_mock_get_post",
+  "api_tests/test_mock_api.py::TestMockAPI::test_mock_payment_declined",
+  "api_tests/test_mock_api.py::TestMockAPI::test_mock_server_error",
+  "api_tests/test_mock_api.py::TestMockAPI::test_mock_slow_api_timeout",
   "api_tests/test_posts_api.py::TestPostsAPI::test_create_post",
   "api_tests/test_posts_api.py::TestPostsAPI::test_delete_post",
   "api_tests/test_posts_api.py::TestPostsAPI::test_get_all_posts",
